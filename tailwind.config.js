@@ -20,7 +20,7 @@ module.exports = {
         ],
       },
       colors: {
-        primary: { DEFAULT: '#891cd0' },
+        'ie-blue': { DEFAULT: '#286FFF', light: 'rgba(40, 111, 255, 0.1)' },
       },
     },
   },
