@@ -15,15 +15,13 @@ export default function Home() {
       <div className="min-h-screen grid items-center justify-center">
         <div className="max-w-lg px-2">
           <div className="flex justify-center">
-            <div className="rounded-full ring-8 ring-ie-blue overflow-hidden flex items-center">
-              <Image
-                src="/images/mubashir-630x630.png"
-                alt="Mubashir Hassan Profile"
-                className="w-32 h-32"
-                width="200"
-                height="200"
-              />
-            </div>
+            <Image
+              src="/images/mubashir-630x630.png"
+              alt="Mubashir Hassan Profile"
+              className="w-32 h-32"
+              width="200"
+              height="200"
+            />
           </div>
           <div className="text-center mt-4">
             <Link href="/">
