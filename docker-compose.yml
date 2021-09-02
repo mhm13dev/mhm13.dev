@@ -8,7 +8,6 @@ services:
     volumes:
       - ./:/app
     ports:
-      - '5051:80'
+      - '5051:3000'
 
-    # command: sh -c "npm i && npm run dev -- -p 80"
-    command: sh -c "npm i && npm run build && npm start -- -p 80"
+    command: sh -c "npm i && npm run dev"

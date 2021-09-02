@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: ./
+    image: mhm13dev:${MY_IMAGE_VERSION:-latest}
+    restart: always
+    ports:
+      - '5051:3000'
