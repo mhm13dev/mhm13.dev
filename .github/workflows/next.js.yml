@@ -13,9 +13,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          echo $(docker images --format="{{.Repository}} {{.ID}}" |
-          grep "^mhm13dev " |
-          cut -d' ' -f2) >> $OLD_IMAGE
+          echo "OLD_IMAGE=$(docker images --format="{{.Repository}} {{.ID}}" |
+          grep "^mhm13dev " | 
+          cut -d' ' -f2)" >> $GITHUB_ENV
       - run: docker build -t mhm13dev .
       - run: docker-compose -f ./docker-compose-prod.yml up -d
       - run: docker image rm $OLD_IMAGE
