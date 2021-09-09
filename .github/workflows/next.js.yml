@@ -8,7 +8,8 @@ on:
 jobs:
   build:
     runs-on: self-hosted
-
+    env:
+      OLD_IMAGE: default
     steps:
       - uses: actions/checkout@v2
       - run: |
