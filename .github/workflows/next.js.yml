@@ -17,4 +17,4 @@ jobs:
           cut -d' ' -f2)
       - run: docker build -t mhm13dev .
       - run: docker-compose -f ./docker-compose-prod.yml up -d
-      - run: docker image rm $OLD_IMAGE
+      - run: docker image rm ${OLD_IMAGE:-default}
