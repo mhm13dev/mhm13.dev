@@ -7,6 +7,7 @@ on:
 
 jobs:
   build:
+    name: Build New Docker Image, Delete Old One & Deploy Changes
     runs-on: self-hosted
     env:
       OLD_IMAGE: default
