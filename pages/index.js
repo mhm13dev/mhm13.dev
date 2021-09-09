@@ -34,6 +34,10 @@ export default function Home() {
               ReactJS, NextJS on the Frontend and NodeJS, Express, MongoDB on
               the backend!
             </p>
+            <p className="mt-2">
+              I also work with Git, GitHub, Docker, VPS Servers, Nginx and other
+              tools to manage and deploy code to production.
+            </p>
           </div>
           <div className="text-center mt-4 flex gap-x-4 items-center justify-center">
             <Link href="https://github.com/mhm13dev">
