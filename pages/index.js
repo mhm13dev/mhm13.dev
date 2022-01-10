@@ -1,12 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import {
-  FaFacebook,
-  FaTwitter,
-  FaInstagram,
-  FaGithub,
-  FaLinkedin,
-} from 'react-icons/fa';
 import BlurBG from '../components/BlurBG';
 import Navbar from '../components/Navbar';
 import SocialLinks from '../components/SocialLinks';

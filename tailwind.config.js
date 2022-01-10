@@ -5,6 +5,19 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        'bg-position': {
+          '0%': {
+            'background-position': '0 0',
+          },
+          '100%': {
+            'background-position': '100% 0',
+          },
+        },
+      },
+      animation: {
+        'bg-position': 'bg-position 2s infinite linear alternate',
+      },
       fontFamily: {
         inter: [
           'Inter',
