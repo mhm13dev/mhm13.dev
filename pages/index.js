@@ -32,13 +32,15 @@ export default function Home() {
               className="-z-50"
             />
             <div className="flex justify-center">
-              <Image
-                src="/images/mubashir-630x630.png"
-                alt="Mubashir Hassan Profile"
-                className="w-32 h-32"
-                width="200"
-                height="200"
-              />
+              <div className="flex justify-center bg-white rounded-full relative after:w-full after:h-full after:-z-50 after:rounded-full after:bg-[length:300%_100%] after:transform after:scale-105 after:bg-gradient-to-r after:from-[#ff0080] after:via-white after:to-[#0070f3] after:animate-bg-position after:absolute after:block after:bg-red-300">
+                <Image
+                  src="/images/mubashir-630x630-no-border.png"
+                  alt="Mubashir Hassan Profile"
+                  className="w-32 h-32"
+                  width="200"
+                  height="200"
+                />
+              </div>
             </div>
             <div className="text-center mt-4">
               <Link href="/">
