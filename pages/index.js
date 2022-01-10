@@ -8,12 +8,31 @@ import {
   FaGithub,
   FaLinkedin,
 } from 'react-icons/fa';
+import BlurBG from '../components/BlurBG';
 
 export default function Home() {
   return (
-    <div className="bg-gray-100">
+    <div className="bg-white overflow-hidden relative">
+      <BlurBG
+        bg="bg-[#0070f3]"
+        width="w-[600px]"
+        height="h-[600px]"
+        blur="blur-3xl"
+        opacity="opacity-10"
+        left="-left-[200px]"
+        top="-top-[200px]"
+      />
       <div className="min-h-screen grid items-center justify-center">
-        <div className="max-w-lg px-2">
+        <div className="max-w-lg px-2 relative">
+          <BlurBG
+            bg="bg-[#ff0080]"
+            width="w-[800px]"
+            height="h-[800px]"
+            blur="blur-3xl"
+            opacity="opacity-10"
+            left="-left-[100px]"
+            top="-top-[100px]"
+          />
           <div className="flex justify-center">
             <Image
               src="/images/mubashir-630x630.png"
