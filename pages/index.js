@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { ReactComponent as IE } from '../public/images/influearners-circle.svg';
 import {
   FaFacebook,
   FaTwitter,
@@ -93,11 +92,6 @@ export default function Home() {
                 title="linkedin.com/in/mhm13dev"
               >
                 <FaLinkedin className="w-6 h-6 text-gray-700 hover:text-ie-blue" />
-              </a>
-            </Link>
-            <Link href="https://influearners.com">
-              <a target="_blank" rel="noreferrer" title="InfluEarners.com">
-                <IE className="w-6 h-6 text-gray-700 hover:text-ie-blue" />
               </a>
             </Link>
           </div>
