@@ -57,17 +57,18 @@ interface Props {
   twitter?: TwitterCard;
 }
 
+const description =
+  "I am a MERN Stack Web Developer. Some of the technologies I work with include ReactJS, NextJS, Typescript, TailwindCSS, NodeJS, Express, MongoDB, Firebase, and more. I also work with Git, GitHub, Docker, VPS Servers, Nginx and more.";
+
 const defaultMetaData: Required<Props> = {
   title: "Mubashir Hassan - MERN Stack Web Developer | mhm13.dev",
-  description:
-    "I am a MERN Stack Web Developer. I craft beautiful websites using ReactJS, NextJS on the Frontend and NodeJS, Express, MongoDB on the backend.",
+  description,
   keywords:
     "mubashir hassan, mubashir, mhm13dev, mhm13, mern, web developer, mern stack developer",
   og: {
     type: "article",
     title: "Mubashir Hassan - MERN Stack Web Developer | mhm13.dev",
-    description:
-      "I am a MERN Stack Web Developer. I craft beautiful websites using ReactJS, NextJS on the Frontend and NodeJS, Express, MongoDB on the backend.",
+    description,
     image: "https://mhm13.dev/images/mubashir-630x630.png",
     url: "https://mhm13.dev",
     site_name: "mhm13.dev",
@@ -75,8 +76,7 @@ const defaultMetaData: Required<Props> = {
   twitter: {
     card: "summary",
     title: "Mubashir Hassan - MERN Stack Web Developer | mhm13.dev",
-    description:
-      "I am a MERN Stack Web Developer. I craft beautiful websites using ReactJS, NextJS on the Frontend and NodeJS, Express, MongoDB on the backend.",
+    description,
     image: "https://mhm13.dev/images/mubashir-630x630.png",
     site: "@mhm13dev",
     creator: "@mhm13dev",

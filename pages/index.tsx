@@ -53,7 +53,7 @@ export default function Home() {
               </Link>
               <p className="mt-4">
                 I am a MERN Stack Web Developer. Some of the technologies I work
-                with includes ReactJS, NextJS, Typescript, TailwindCSS, NodeJS,
+                with include ReactJS, NextJS, Typescript, TailwindCSS, NodeJS,
                 Express, MongoDB, Firebase, and more.
               </p>
               <p className="mt-2">
