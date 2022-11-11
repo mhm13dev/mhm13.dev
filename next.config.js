@@ -1,29 +1,13 @@
-const withPlugins = require('next-compose-plugins');
-const sizeOfImage = require('image-size');
+/** @type {import('next').NextConfig} */
 
-module.exports = withPlugins([], {
+module.exports = {
   webpack(config) {
     config.module.rules.push({
-      test: /\.svg$/,
-      use: [
-        '@svgr/webpack',
-        {
-          loader: 'url-loader',
-          options: {
-            generator: (content, mimetype, encoding, resourcePath) => {
-              const dimensions = sizeOfImage(content);
-              return {
-                src: `data:${mimetype}${
-                  encoding ? `;${encoding}` : ''
-                },${content.toString(encoding)}`,
-                height: dimensions.height,
-                width: dimensions.width,
-              };
-            },
-          },
-        },
-      ],
+      test: /\.svg$/i,
+      issuer: /\.[jt]sx?$/,
+      use: ["@svgr/webpack"],
     });
+
     return config;
   },
-});
+};

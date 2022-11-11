@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import Head from "next/head";
 /*
 * Template For Meta Tags - https://moz.com/blog/meta-data-templates-123
 
@@ -31,33 +31,61 @@ Facebook: Standards vary, but an image at least 200x200px works best. Facebook r
 
 */
 
-const defaultMetaData = {
-  title: 'Mubashir Hassan - MERN Stack Web Developer | mhm13.dev',
+interface TwitterCard {
+  card: string;
+  site: string;
+  title: string;
+  description: string;
+  creator: string;
+  image: string;
+}
+
+interface OpenGraph {
+  title: string;
+  type: string;
+  url: string;
+  image: string;
+  description: string;
+  site_name: string;
+}
+
+interface Props {
+  title?: string;
+  description?: string;
+  keywords?: string;
+  og?: OpenGraph;
+  twitter?: TwitterCard;
+}
+
+const defaultMetaData: Required<Props> = {
+  title: "Mubashir Hassan - MERN Stack Web Developer | mhm13.dev",
   description:
-    'I am a MERN Stack Web Developer. I craft beautiful websites using ReactJS, NextJS on the Frontend and NodeJS, Express, MongoDB on the backend.',
+    "I am a MERN Stack Web Developer. I craft beautiful websites using ReactJS, NextJS on the Frontend and NodeJS, Express, MongoDB on the backend.",
   keywords:
-    'mubashir hassan, mubashir, mhm13dev, mhm13, mern, web developer, mern stack developer',
+    "mubashir hassan, mubashir, mhm13dev, mhm13, mern, web developer, mern stack developer",
   og: {
-    type: 'article',
-    title: 'Mubashir Hassan - MERN Stack Web Developer | mhm13.dev',
+    type: "article",
+    title: "Mubashir Hassan - MERN Stack Web Developer | mhm13.dev",
     description:
-      'I am a MERN Stack Web Developer. I craft beautiful websites using ReactJS, NextJS on the Frontend and NodeJS, Express, MongoDB on the backend.',
-    image: 'https://mhm13.dev/images/mubashir-630x630.png',
-    url: 'https://mhm13.dev',
-    site_name: 'mhm13.dev',
+      "I am a MERN Stack Web Developer. I craft beautiful websites using ReactJS, NextJS on the Frontend and NodeJS, Express, MongoDB on the backend.",
+    image: "https://mhm13.dev/images/mubashir-630x630.png",
+    url: "https://mhm13.dev",
+    site_name: "mhm13.dev",
   },
   twitter: {
-    card: 'summary',
-    title: 'Mubashir Hassan - MERN Stack Web Developer | mhm13.dev',
+    card: "summary",
+    title: "Mubashir Hassan - MERN Stack Web Developer | mhm13.dev",
     description:
-      'I am a MERN Stack Web Developer. I craft beautiful websites using ReactJS, NextJS on the Frontend and NodeJS, Express, MongoDB on the backend.',
-    image: 'https://mhm13.dev/images/mubashir-120x120.png',
-    site: '@mhm13dev',
-    creator: '@mhm13dev',
+      "I am a MERN Stack Web Developer. I craft beautiful websites using ReactJS, NextJS on the Frontend and NodeJS, Express, MongoDB on the backend.",
+    image: "https://mhm13.dev/images/mubashir-630x630.png",
+    site: "@mhm13dev",
+    creator: "@mhm13dev",
   },
 };
 
-export default function Meta({ metadata = { twitter: {}, og: {} } }) {
+const Meta: React.FC<Props> = (props: Props) => {
+  const defaultMeta = defaultMetaData;
+
   return (
     <Head>
       <meta charSet="utf-8" />
@@ -65,65 +93,54 @@ export default function Meta({ metadata = { twitter: {}, og: {} } }) {
       {/* Twitter Card data  */}
       <meta
         name="twitter:card"
-        value={metadata.twitter.card || defaultMetaData.twitter.card}
+        content={props.twitter?.card ?? defaultMeta.twitter.card}
       />
       <meta
         name="twitter:title"
-        content={metadata.twitter.title || defaultMetaData.twitter.title}
+        content={props.twitter?.title ?? defaultMeta.twitter.title}
       />
       <meta
         name="twitter:description"
-        content={
-          metadata.twitter.description || defaultMetaData.twitter.description
-        }
+        content={props.twitter?.description ?? defaultMeta.twitter.description}
       />
       {/* Twitter Summary card images must be at least 120x120px  */}
       <meta
         name="twitter:image"
-        content={metadata.twitter.image || defaultMetaData.twitter.image}
+        content={props.twitter?.image ?? defaultMeta.twitter.image}
       />
       <meta
         name="twitter:site"
-        content={metadata.twitter.site || defaultMetaData.twitter.site}
+        content={props.twitter?.site ?? defaultMeta.twitter.site}
       />
       <meta
         name="twitter:creator"
-        content={metadata.twitter.creator || defaultMetaData.twitter.creator}
+        content={props.twitter?.creator ?? defaultMeta.twitter.creator}
       />
       {/* Open Graph data */}
       <meta
         property="og:type"
-        content={metadata.og.type || defaultMetaData.og.type}
+        content={props.og?.type ?? defaultMeta.og.type}
       />
       <meta
         property="og:title"
-        content={metadata.og.title || defaultMetaData.og.title}
+        content={props.og?.title ?? defaultMeta.og.title}
       />
       <meta
         property="og:description"
-        content={metadata.og.description || defaultMetaData.og.description}
+        content={props.og?.description ?? defaultMeta.og.description}
       />
       <meta
         property="og:image"
-        content={metadata.og.image || defaultMetaData.og.image}
+        content={props.og?.image ?? defaultMeta.og.image}
       />
-      <meta
-        property="og:url"
-        content={metadata.og.url || defaultMetaData.og.url}
-      />
+      <meta property="og:url" content={props.og?.url ?? defaultMeta.og.url} />
       <meta
         property="og:site_name"
-        content={metadata.og.site_name || defaultMetaData.og.site_name}
+        content={props.og?.site_name ?? defaultMeta.og.site_name}
       />
-      <title>{metadata.title || defaultMetaData.title}</title>
-      <meta
-        name="description"
-        content={metadata.description || defaultMetaData.description}
-      />
-      <meta
-        name="keywords"
-        content={metadata.keywords || defaultMetaData.keywords}
-      />
+      <title>{props.title}</title>
+      <meta name="description" content={props.description} />
+      <meta name="keywords" content={props.keywords} />
 
       {/* Favicons */}
       <link rel="icon" href="/favicons/favicon.ico" />
@@ -209,4 +226,6 @@ export default function Meta({ metadata = { twitter: {}, og: {} } }) {
       <link rel="manifest" href="/manifest.json" />
     </Head>
   );
-}
+};
+
+export default Meta;
