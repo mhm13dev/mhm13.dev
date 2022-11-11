@@ -138,9 +138,12 @@ const Meta: React.FC<Props> = (props: Props) => {
         property="og:site_name"
         content={props.og?.site_name ?? defaultMeta.og.site_name}
       />
-      <title>{props.title}</title>
-      <meta name="description" content={props.description} />
-      <meta name="keywords" content={props.keywords} />
+      <title>{props.title ?? defaultMeta.title}</title>
+      <meta
+        name="description"
+        content={props.description ?? defaultMeta.description}
+      />
+      <meta name="keywords" content={props.keywords ?? defaultMeta.keywords} />
 
       {/* Favicons */}
       <link rel="icon" href="/favicons/favicon.ico" />
