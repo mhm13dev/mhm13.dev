@@ -53,11 +53,11 @@ export default function Home() {
               </Link>
               <p className="mt-4">
                 I am a MERN Stack Web Developer. Some of the technologies I work
-                with include ReactJS, NextJS, Typescript, TailwindCSS, NodeJS,
-                Express, MongoDB, Firebase, and more.
+                with include React.js, Next.js, Typescript, TailwindCSS,
+                Node.js, Express.js, Nest.js, MongoDB, Firebase, and more.
               </p>
               <p className="mt-2">
-                I also work with Git, GitHub, Docker, VPS Servers, Nginx and
+                I also work with Git, GitHub, Docker, AWS services, Nginx and
                 other tools to manage and deploy code to production.
               </p>
             </div>

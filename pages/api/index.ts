@@ -15,16 +15,12 @@ export default function handler(_req: NextApiRequest, res: NextApiResponse) {
         link: "https://twitter.com/mhm13dev",
       },
       {
-        name: "instagram",
-        link: "https://instagram.com/mhm13dev",
-      },
-      {
-        name: "facebook",
-        link: "https://facebook.com/mhm13dev",
-      },
-      {
         name: "linkedin",
         link: "https://linkedin.com/in/mhm13dev",
+      },
+      {
+        name: "resume",
+        link: "https://bit.ly/mern-cv-mhm13dev",
       },
     ],
   });
