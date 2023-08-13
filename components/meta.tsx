@@ -58,7 +58,7 @@ interface Props {
 }
 
 const description =
-  "I am a MERN Stack Web Developer. Some of the technologies I work with include ReactJS, NextJS, Typescript, TailwindCSS, NodeJS, Express, MongoDB, Firebase, and more. I also work with Git, GitHub, Docker, VPS Servers, Nginx and more.";
+  "I am a MERN Stack Web Developer. Some of the technologies I work with include React.js, Next.js, Typescript, TailwindCSS, Node.js, Express.js, Nest.js, MongoDB, Firebase, and more. I also work with Git, GitHub, Docker, AWS services, Nginx and other tools to manage and deploy code to production.";
 
 const defaultMetaData: Required<Props> = {
   title: "Mubashir Hassan - MERN Stack Web Developer | mhm13.dev",

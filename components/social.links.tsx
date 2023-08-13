@@ -1,5 +1,4 @@
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
-import { BiSolidFilePdf } from "react-icons/bi";
 
 const SocialLinks = ({ className = "" }) => {
   return (
@@ -31,14 +30,6 @@ const SocialLinks = ({ className = "" }) => {
         title="linkedin.com/in/mhm13dev"
       >
         <FaLinkedin className="w-6 h-6 text-gray-700 hover:text-ie-blue" />
-      </a>
-      <a
-        href="https://bit.ly/mern-cv-mhm13dev"
-        target="_blank"
-        rel="noreferrer noopener"
-        title="Resume"
-      >
-        <BiSolidFilePdf className="w-6 h-6 text-gray-700 hover:text-ie-blue" />
       </a>
     </div>
   );
