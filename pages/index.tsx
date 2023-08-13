@@ -62,7 +62,7 @@ export default function Home() {
               </p>
             </div>
             <SocialLinks className="mt-4" />
-            <div className="text-center mt-4">
+            <div className="text-center mt-2">
               <a
                 href="https://bit.ly/mern-cv-mhm13dev"
                 target="_blank"
