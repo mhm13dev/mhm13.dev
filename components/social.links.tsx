@@ -1,9 +1,13 @@
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { cn } from "@/utils/cn";
 
-const SocialLinks = ({ className = "" }) => {
+export const SocialLinks = ({ className = "" }) => {
   return (
     <div
-      className={`text-center flex gap-x-4 items-center justify-center ${className}`}
+      className={cn(
+        `text-center flex gap-x-4 items-center justify-center`,
+        className
+      )}
     >
       <a
         href="https://github.com/mhm13dev"
@@ -34,5 +38,3 @@ const SocialLinks = ({ className = "" }) => {
     </div>
   );
 };
-
-export default SocialLinks;

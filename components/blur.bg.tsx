@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import { cn } from "@/utils/cn";
 
 interface Props {
   className?: string;
@@ -13,7 +13,7 @@ interface Props {
   bottom?: string;
 }
 
-const BlurBG: React.FC<Props> = ({
+export const BlurBG: React.FC<Props> = ({
   className = "",
   bg = "bg-[#0070f3]",
   width = "w-[600px]",
@@ -27,7 +27,7 @@ const BlurBG: React.FC<Props> = ({
 }) => {
   return (
     <div
-      className={clsx(
+      className={cn(
         `rounded-full filter absolute`,
         bg,
         width,
@@ -43,5 +43,3 @@ const BlurBG: React.FC<Props> = ({
     ></div>
   );
 };
-
-export default BlurBG;

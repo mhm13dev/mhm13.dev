@@ -1,9 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-
-import BlurBG from "@/components/blur.bg";
-import Navbar from "@/components/navbar";
-import SocialLinks from "@/components/social.links";
+import { BlurBG } from "@/components/blur.bg";
+import { Navbar } from "@/components/navbar";
+import { SocialLinks } from "@/components/social.links";
 
 export default function Home() {
   return (

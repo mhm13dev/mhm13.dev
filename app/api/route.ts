@@ -1,10 +1,11 @@
-import { NextApiRequest, NextApiResponse } from "next";
+import { NextResponse } from "next/server";
 
-export default function handler(_req: NextApiRequest, res: NextApiResponse) {
-  res.status(200).json({
+export async function GET() {
+  return NextResponse.json({
     name: "Mubashir Hassan",
     title: "Mubashir Hassan | mhm13.dev",
-    description: `I am a MERN Stack Web Developer. I craft beautiful websites using ReactJS, NextJS on the Frontend and NodeJS, Express, MongoDB on the backend!`,
+    description:
+      "I am a MERN Stack Web Developer. I craft beautiful websites using ReactJS, NextJS on the Frontend and NodeJS, Express, MongoDB on the backend!",
     social: [
       {
         name: "github",
