@@ -63,7 +63,7 @@ export default function Home() {
             <SocialLinks className="mt-4" />
             <div className="text-center mt-2">
               <a
-                href="https://bit.ly/mern-cv-mhm13dev"
+                href="/resume"
                 target="_blank"
                 rel="noreferrer noopener"
                 className="inline-block text-center text-gray-700 hover:text-ie-blue rounded px-4 py-2 underline underline-offset-4 font-medium"

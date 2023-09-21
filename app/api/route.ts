@@ -21,7 +21,7 @@ export async function GET() {
       },
       {
         name: "resume",
-        link: "https://bit.ly/mern-cv-mhm13dev",
+        link: "https://mhm13.dev/resume",
       },
     ],
   });
