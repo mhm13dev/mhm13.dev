@@ -1,0 +1,149 @@
+import type { Metadata, Viewport } from "next";
+
+const domain = "mhm13.dev";
+const websiteUrl = `https://${domain}`;
+const imageSrc = `${websiteUrl}/images/mubashir-630x630.png`;
+const defaultTitle = "Mubashir Hassan - Full Stack Developer";
+const defaultDescription =
+  "Full Stack Developer specializing in modern web technologies.";
+
+export const metadata: Metadata = {
+  title: {
+    default: defaultTitle,
+    template: "%s | Mubashir Hassan",
+  },
+  description: defaultDescription,
+  keywords: [
+    "Mubashir Hassan",
+    "mhm13dev",
+    "Full Stack Developer",
+    "TypeScript",
+    "JavaScript",
+    "MERN Stack",
+    "React.js",
+    "Next.js",
+    "Node.js",
+    "Postgres",
+    "PHP",
+    "Laravel",
+    "Pakistan",
+    "Lahore",
+    "Software Developer",
+    "Web Developer",
+    "Tech Lead",
+    "Kwanso",
+  ],
+  authors: [{ name: "Mubashir Hassan" }],
+  creator: "Mubashir Hassan",
+  metadataBase: new URL(websiteUrl),
+  openGraph: {
+    type: "article",
+    title: defaultTitle,
+    description: defaultDescription,
+    url: websiteUrl,
+    siteName: domain,
+    locale: "en_US",
+    images: [
+      {
+        url: imageSrc,
+        width: 630,
+        height: 630,
+        alt: defaultTitle,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: defaultTitle,
+    description: defaultDescription,
+    creator: "@mhm13dev",
+    images: [
+      {
+        url: imageSrc,
+        width: 630,
+        height: 630,
+        alt: defaultTitle,
+      },
+    ],
+  },
+  manifest: "/manifest.json",
+  icons: [
+    {
+      rel: "icon",
+      url: "/favicons/favicon.ico",
+    },
+    {
+      rel: "apple-touch-icon",
+      url: "/favicons/apple-icon-57x57.png",
+      sizes: "57x57",
+    },
+    {
+      rel: "apple-touch-icon",
+      url: "/favicons/apple-icon-60x60.png",
+      sizes: "60x60",
+    },
+    {
+      rel: "apple-touch-icon",
+      url: "/favicons/apple-icon-72x72.png",
+      sizes: "72x72",
+    },
+    {
+      rel: "apple-touch-icon",
+      url: "/favicons/apple-icon-76x76.png",
+      sizes: "76x76",
+    },
+    {
+      rel: "apple-touch-icon",
+      url: "/favicons/apple-icon-114x114.png",
+      sizes: "114x114",
+    },
+    {
+      rel: "apple-touch-icon",
+      url: "/favicons/apple-icon-120x120.png",
+      sizes: "120x120",
+    },
+    {
+      rel: "apple-touch-icon",
+      url: "/favicons/apple-icon-144x144.png",
+      sizes: "144x144",
+    },
+    {
+      rel: "apple-touch-icon",
+      url: "/favicons/apple-icon-152x152.png",
+      sizes: "152x152",
+    },
+    {
+      rel: "apple-touch-icon",
+      url: "/favicons/apple-icon-180x180.png",
+      sizes: "180x180",
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      url: "/favicons/android-icon-192x192.png",
+      sizes: "192x192",
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      url: "/favicons/favicon-32x32.png",
+      sizes: "32x32",
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      url: "/favicons/favicon-96x96.png",
+      sizes: "96x96",
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      url: "/favicon-16x16.png",
+      sizes: "16x16",
+    },
+  ],
+};
+
+export const viewport: Viewport = {
+  themeColor: "#ffffff",
+};
