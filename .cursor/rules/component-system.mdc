@@ -1,0 +1,41 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Component System & Patterns
+
+This project uses a custom component system built with CVA (Class Variance Authority) for type-safe component variants.
+
+## Component Structure
+
+### Page Components
+- [components/header.tsx](mdc:components/header.tsx) - Site navigation with responsive design
+- [components/hero.tsx](mdc:components/hero.tsx) - Introduction section with bio
+- [components/work.tsx](mdc:components/work.tsx) - Work experience timeline
+- [components/connect.tsx](mdc:components/connect.tsx) - Social media links
+
+### UI Components
+- [components/ui/link.tsx](mdc:components/ui/link.tsx) - Unified Link component with CVA variants
+
+## CVA Pattern
+The Link component demonstrates the CVA pattern:
+
+```tsx
+// Variants: nav, brand, muted
+<Link href="/about" variant="nav">About</Link>
+<Link href="https://example.com" variant="brand" external>Company</Link>
+```
+
+## Component Conventions
+- Use TypeScript interfaces for all props
+- Leverage React 19 features (no forwardRef needed)
+- External links automatically get target="_blank" and rel="noopener noreferrer"
+- Internal links use Next.js Link for client-side navigation
+- All components use the cn() utility from [lib/utils.ts](mdc:lib/utils.ts) for class merging
+
+## Styling Patterns
+- Neutral color palette: neutral-600, neutral-900, etc.
+- Responsive spacing: mb-8 md:mb-16
+- Hover states: hover:text-neutral-900 dark:hover:text-neutral-100
+- Focus states: focus-visible:outline-none focus-visible:ring-2
