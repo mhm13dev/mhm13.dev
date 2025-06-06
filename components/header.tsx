@@ -1,4 +1,5 @@
 import { Link } from "@/components/ui/link";
+import { ThemeToggle } from "./theme-toggle";
 
 export default function Header() {
   return (
@@ -8,12 +9,10 @@ export default function Header() {
           Mubashir.
         </div>
         <div className="flex items-center space-x-6 text-sm">
-          <Link href="/" variant="nav">
-            About
-          </Link>
           <Link href="/resume" variant="nav" external target="_blank">
             Resume
           </Link>
+          <ThemeToggle />
         </div>
       </nav>
     </header>
