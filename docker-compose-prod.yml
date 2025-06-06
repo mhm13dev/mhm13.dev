@@ -1,8 +1,0 @@
-version: "3.8"
-
-services:
-  app:
-    image: mhm13dev:latest
-    restart: always
-    ports:
-      - "5051:3000"

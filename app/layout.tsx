@@ -1,25 +1,38 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import { cn } from "@/utils/cn";
-import { defaultMetadata } from "./metadata";
+import { ThemeProvider } from "next-themes";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
+export { metadata, viewport } from "@/lib/metadata";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
   subsets: ["latin"],
-  display: "swap",
-  variable: "--font-inter",
 });
 
-export const metadata: Metadata = defaultMetadata;
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
-    <html lang="en">
-      <body className={cn(inter.variable, "font-inter")}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <ThemeProvider
+          attribute="data-theme"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

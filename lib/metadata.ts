@@ -1,49 +1,71 @@
-import { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 
-const username = "mhm13dev";
-const website = "mhm13.dev";
-const websiteUrl = `https://${website}`;
-const title = `Mubashir Hassan - MERN Stack Web Developer | ${website}`;
-const description =
-  "I am a MERN Stack Web Developer. Some of the technologies I work with include React.js, Next.js, Typescript, TailwindCSS, Node.js, Express.js, Nest.js, MongoDB, Firebase, and more. I also work with Git, GitHub, Docker, AWS services, Nginx and other tools to manage and deploy code to production.";
+const domain = "mhm13.dev";
+const websiteUrl = `https://${domain}`;
 const imageSrc = `${websiteUrl}/images/mubashir-630x630.png`;
+const defaultTitle = "Mubashir Hassan - Full Stack Developer";
+const defaultDescription =
+  "I work primarily in the JavaScript/TypeScript ecosystem using React.js, Next.js, Node.js, and other modern technologies to create digital experiences — one commit at a time 💥";
 
-export const defaultMetadata: Metadata = {
-  title,
-  description,
-  keywords:
-    "mubashir hassan, mubashir, mhm13dev, mhm13, mern, web developer, mern stack developer",
+export const metadata: Metadata = {
+  title: {
+    default: defaultTitle,
+    template: "%s | Mubashir Hassan",
+  },
+  description: defaultDescription,
+  keywords: [
+    "Mubashir Hassan",
+    "mhm13dev",
+    "Full Stack Developer",
+    "TypeScript",
+    "JavaScript",
+    "MERN Stack",
+    "React.js",
+    "Next.js",
+    "Node.js",
+    "Postgres",
+    "PHP",
+    "Laravel",
+    "Pakistan",
+    "Lahore",
+    "Software Developer",
+    "Web Developer",
+    "Tech Lead",
+    "Kwanso",
+  ],
+  authors: [{ name: "Mubashir Hassan" }],
+  creator: "Mubashir Hassan",
   metadataBase: new URL(websiteUrl),
   openGraph: {
     type: "article",
-    title,
-    description,
+    title: defaultTitle,
+    description: defaultDescription,
     url: websiteUrl,
-    siteName: website,
+    siteName: domain,
+    locale: "en_US",
     images: [
       {
         url: imageSrc,
         width: 630,
         height: 630,
-        alt: title,
+        alt: defaultTitle,
       },
     ],
   },
   twitter: {
     card: "summary",
-    title,
-    description,
-    creator: `@${username}`,
+    title: defaultTitle,
+    description: defaultDescription,
+    creator: "@mhm13dev",
     images: [
       {
         url: imageSrc,
         width: 630,
         height: 630,
-        alt: title,
+        alt: defaultTitle,
       },
     ],
   },
-  themeColor: "#ffffff",
   manifest: "/manifest.json",
   icons: [
     {
@@ -120,4 +142,15 @@ export const defaultMetadata: Metadata = {
       sizes: "16x16",
     },
   ],
+};
+
+export const viewport: Viewport = {
+  themeColor: "#ffffff",
+};
+
+export const links = {
+  github: "https://github.com/mhm13dev",
+  linkedin: "https://linkedin.com/in/mhm13dev",
+  x: "https://x.com/mhm13dev",
+  email: "mhm13dev@gmail.com",
 };

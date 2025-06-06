@@ -1,0 +1,45 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Content Guidelines & Professional Context
+
+## About Mubashir Hassan
+- **Current Role**: Tech Lead at Kwanso (May 2025 — Present)
+- **Previous Role**: Senior Software Developer at Kwanso (April 2024 — May 2025)
+- **Location**: Lahore, Pakistan
+- **Focus**: Backend-heavy full-stack developer
+- **Philosophy**: "One commit at a time 💥"
+
+## Technical Expertise
+- **Backend**: Node.js, Nest.js, TypeScript
+- **Databases**: PostgreSQL, Redis, Elasticsearch
+- **APIs**: RESTful and GraphQL APIs
+- **Payments**: Chargebee and Stripe integration
+- **Frontend**: React.js, Next.js
+
+## Content Tone
+- Professional but approachable
+- Minimal and clean (inspired by leerob.com)
+- Technical accuracy with specific details
+- Focus on backend/payment systems expertise
+
+## Work Experience Details
+Tech Lead responsibilities include:
+- Leading 5+ engineers
+- Backend system architecture
+- Database optimization
+- Payment/subscription systems
+
+Senior Developer experience included:
+- Scalable backend systems
+- API development (REST/GraphQL)
+- Payment processing (Chargebee/Stripe)
+- Database performance optimization
+
+## Key Messaging
+- Backend-heavy full stack developer
+- Expertise in subscription/payment systems
+- Leadership and mentoring experience
+- Modern web technologies focus

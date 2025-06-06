@@ -1,0 +1,34 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Project Overview - Mubashir Hassan Personal Website
+
+This is a minimal, clean personal website showcasing Mubashir Hassan's work as a Tech Lead and full-stack developer.
+
+## Tech Stack
+- **Framework**: Next.js 15 with React 19
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **Components**: Custom component system with CVA variants
+- **Utilities**: clsx + tailwind-merge
+
+## Design Philosophy
+Inspired by leerob.com, following minimal design principles:
+- Clean typography and generous whitespace
+- Neutral color palette (light/dark mode support)
+- Content-first, distraction-free layout
+- Mobile-responsive design
+
+## Key Files
+- [app/page.tsx](mdc:app/page.tsx) - Main homepage
+- [app/layout.tsx](mdc:app/layout.tsx) - Root layout with metadata
+- [lib/metadata.ts](mdc:lib/metadata.ts) - Site metadata configuration
+- [lib/utils.ts](mdc:lib/utils.ts) - Utility functions including cn()
+
+## Architecture Principles
+- Component-based with modular, reusable components
+- Type-safe with full TypeScript support
+- Modern React 19 patterns (no forwardRef needed)
+- Performance optimized for Core Web Vitals
