@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 
 const domain = "mhm13.dev";
 const websiteUrl = `https://${domain}`;
-const imageSrc = `${websiteUrl}/images/mubashir-630x630.png`;
+const imageSrc = `${websiteUrl}/images/profile.png`;
 const defaultTitle = "Mubashir Hassan - Full Stack Developer";
 const defaultDescription =
   "I work primarily in the JavaScript/TypeScript ecosystem using React.js, Next.js, Node.js, and other modern technologies to create digital experiences — one commit at a time 💥";
