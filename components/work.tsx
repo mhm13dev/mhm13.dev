@@ -6,7 +6,7 @@ export default function Work() {
       </h2>
       <div className="space-y-6 text-sm">
         <div className="flex flex-col">
-          <div className="flex justify-between items-start mb-1">
+          <div className="flex justify-between items-start mb-2">
             <span className="text-neutral-900 dark:text-neutral-100 font-medium">
               Tech Lead
             </span>
@@ -14,7 +14,7 @@ export default function Work() {
               May 2025 — Present
             </span>
           </div>
-          <div className="text-neutral-600 dark:text-neutral-400 mb-1">
+          <div className="text-neutral-600 dark:text-neutral-400 mb-2">
             Kwanso
           </div>
           <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed">
@@ -30,7 +30,7 @@ export default function Work() {
         </div>
 
         <div className="flex flex-col">
-          <div className="flex justify-between items-start mb-1">
+          <div className="flex justify-between items-start mb-2">
             <span className="text-neutral-900 dark:text-neutral-100 font-medium">
               Senior Software Developer
             </span>
@@ -38,7 +38,7 @@ export default function Work() {
               April 2024 — May 2025
             </span>
           </div>
-          <div className="text-neutral-600 dark:text-neutral-400 mb-1">
+          <div className="text-neutral-600 dark:text-neutral-400 mb-2">
             Kwanso
           </div>
           <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed">
