@@ -5,7 +5,7 @@ import Connect from "@/components/connect";
 
 export default function Home() {
   return (
-    <div className="max-w-3xl mx-auto px-6 pt-8 pb-16 md:pt-16">
+    <div className="max-w-3xl mx-auto px-6 py-8 md:py-16">
       <Header />
       <main>
         <Hero />
