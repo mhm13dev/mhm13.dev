@@ -11,11 +11,11 @@ export default function Connect() {
         <Link href={links.github} variant="nav" external target="_blank">
           GitHub
         </Link>
+        <Link href={links.x} variant="nav" external target="_blank">
+          X / Twitter
+        </Link>
         <Link href={links.linkedin} variant="nav" external target="_blank">
           LinkedIn
-        </Link>
-        <Link href={links.twitter} variant="nav" external target="_blank">
-          Twitter
         </Link>
         <Link href={`mailto:${links.email}`} variant="nav" external>
           Email

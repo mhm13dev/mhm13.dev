@@ -151,6 +151,6 @@ export const viewport: Viewport = {
 export const links = {
   github: "https://github.com/mhm13dev",
   linkedin: "https://linkedin.com/in/mhm13dev",
-  twitter: "https://x.com/mhm13dev",
+  x: "https://x.com/mhm13dev",
   email: "mhm13dev@gmail.com",
 };
