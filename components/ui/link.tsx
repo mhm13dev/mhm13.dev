@@ -1,7 +1,7 @@
+import NextLink from "next/link";
+import { ReactNode, ComponentProps } from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
-import { ReactNode, ComponentProps } from "react";
-import NextLink from "next/link";
 
 const linkVariants = cva(
   "transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
@@ -46,7 +46,6 @@ export function Link({
   className,
   variant,
   external,
-  target,
   ...props
 }: LinkProps) {
   const classes = cn(linkVariants({ variant, external, className }));
