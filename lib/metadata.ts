@@ -5,7 +5,7 @@ const websiteUrl = `https://${domain}`;
 const imageSrc = `${websiteUrl}/images/mubashir-630x630.png`;
 const defaultTitle = "Mubashir Hassan - Full Stack Developer";
 const defaultDescription =
-  "Full Stack Developer specializing in modern web technologies.";
+  "I work primarily in the JavaScript/TypeScript ecosystem using React.js, Next.js, Node.js, and other modern technologies to create digital experiences — one commit at a time 💥";
 
 export const metadata: Metadata = {
   title: {
@@ -146,4 +146,11 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: "#ffffff",
+};
+
+export const links = {
+  github: "https://github.com/mhm13dev",
+  linkedin: "https://linkedin.com/in/mhm13dev",
+  twitter: "https://x.com/mhm13dev",
+  email: "mhm13dev@gmail.com",
 };
