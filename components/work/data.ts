@@ -42,7 +42,7 @@ export const workExperiences: WorkExperience[] = [
     id: "web-team-lead-algo-alliance",
     title: "Web Team Lead",
     company: "Algo Alliance",
-    location: "Dubai, UAE",
+    location: "Remote, Dubai",
     duration: "September 2022 — March 2024",
     description: [
       "Led small team of frontend and backend developers",
@@ -69,7 +69,7 @@ export const workExperiences: WorkExperience[] = [
     id: "mern-dev-algo-alliance",
     title: "MERN Stack Developer",
     company: "Algo Alliance",
-    location: "Dubai, UAE",
+    location: "Remote, Dubai",
     duration: "December 2021 — March 2022",
     description: [
       "Built REST APIs for social media platform components",
