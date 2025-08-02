@@ -20,10 +20,8 @@ function WorkItem({ experience }: WorkItemProps) {
       </div>
       <ul className="text-neutral-600 dark:text-neutral-400 leading-relaxed space-y-1">
         {experience.description.map((item, index) => (
-          <li key={index} className="flex items-center">
-            <span className="text-neutral-400 dark:text-neutral-500 mr-2 text-xs">
-              •
-            </span>
+          <li key={index} className="flex items-start">
+            <span className="mr-2 text-xs mt-1">•</span>
             <span>{item}</span>
           </li>
         ))}
