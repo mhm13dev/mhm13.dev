@@ -18,7 +18,7 @@ export const workExperiences: WorkExperience[] = [
       "Leading technical architecture decisions and development teams of 5+ engineers",
       "Designing scalable backend systems and database optimization strategies",
       "Mentoring junior and mid-level developers, conducting code reviews",
-      "Overseeing delivery of robust full-stack applications with focus on server-side performance",
+      "Driving delivery of robust full-stack applications with focus on server-side performance",
       "Collaborating with product managers and stakeholders to architect efficient backend solutions",
     ],
   },
@@ -35,7 +35,6 @@ export const workExperiences: WorkExperience[] = [
       "Integrated subscription and payment processing systems using Chargebee and Stripe",
       "Handled recurring billing, plan upgrades, and payment workflows",
       "Ensured data security and integrity across all systems",
-      "Collaborated with frontend teams to design efficient API contracts",
     ],
   },
   {
@@ -46,10 +45,9 @@ export const workExperiences: WorkExperience[] = [
     duration: "September 2022 — March 2024",
     description: [
       "Led small team of frontend and backend developers",
-      "Architected and developed various microservices for social media project components",
-      "Integrated smart contracts on client side using Web3.js and Ethers.js",
-      "Reviewed pull requests and managed codebase quality standards",
-      "Delivered blockchain-enabled social platform Centher.io",
+      "Architected and developed various microservices for social media module",
+      "Integrated smart contracts using Web3.js and Ethers.js in React.js",
+      "Reviewed pull requests, maintained codebase quality and delivered the blockchain‑enabled platform Centher.io",
     ],
   },
   {
@@ -59,10 +57,9 @@ export const workExperiences: WorkExperience[] = [
     location: "Remote, Germany",
     duration: "April 2022 — September 2022",
     description: [
-      "Specialized in Firebase services integration and cloud functions",
-      "Built applications using Firebase Firestore, Authentication, and Hosting",
-      "Developed Crime Cases Police Server platform for German client",
-      "Created Crime Cases Tonstudio application with real-time features",
+      "Built applications using Firebase Firestore, Authentication and Hosting",
+      "Implemented real-time data sync and secure auth using Firebase Cloud Functions",
+      "Developed the Crime Cases Police Server and Crime Cases Tonstudio applications",
     ],
   },
   {
@@ -86,9 +83,9 @@ export const workExperiences: WorkExperience[] = [
     location: "Remote",
     duration: "March 2019 — December 2021",
     description: [
-      "Worked on small and medium-sized web development projects",
+      "Delivered 10+ web applications for international clients, achieving 100% project completion rate",
       "Created REST APIs using Node.js and Express.js frameworks",
-      "Developed responsive user interfaces with React.js, Next.js, and TailwindCSS",
+      "Developed responsive UIs with React.js, Next.js and TailwindCSS",
       "Built single page applications and modern landing pages",
       "Migrated legacy Angular application to modern Next.js stack",
     ],
