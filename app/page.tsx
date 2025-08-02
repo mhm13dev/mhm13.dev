@@ -1,6 +1,7 @@
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import Work from "@/components/work";
+import Projects from "@/components/projects";
 import Connect from "@/components/connect";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <main>
         <Hero />
         <Work />
+        <Projects />
         <Connect />
       </main>
     </div>

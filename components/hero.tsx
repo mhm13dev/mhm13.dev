@@ -7,7 +7,8 @@ export default function Hero() {
         Hey, I&apos;m Mubashir Hassan 👋
       </h1>
       <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed mb-6">
-        I&apos;m a full stack developer, currently building great software at{" "}
+        I&apos;m a tech lead and full stack developer, currently building great
+        software at{" "}
         <Link
           href="https://kwanso.com"
           variant="brand"
